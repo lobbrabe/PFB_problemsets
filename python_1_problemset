@@ -1,8 +1,30 @@
 #!/usr/bin/env python3
 
+import sys
+
 #printing my name
 my_name= 'Meike'
-print(my_name)
+print('My name is:' + ' ' + my_name)
 
+#printing my favorite color 
+my_fav_color= 'Gray' 
+print('My favorite color is:' + ' ' + my_fav_color)
+
+#printing my favorite activity
+my_fav_activ= 'Sports' 
+print('My favorite activity is:' + ' ' + my_fav_activ)
+
+#printing my favorite animal 
+my_fav_animal= 'Otter'
+print('My favorite animal is:' + ' ' + my_fav_animal)
+
+#printing separated by commas 
+print('it me', my_name, my_fav_color, my_fav_activ, my_fav_animal)
+
+#adding sys arg variables
+my_name = sys.argv[1]
+my_fav_color = sys.argv[2]
+my_fav_activ = sys.argv[3]
+my_fav_animal = sys.argv[4]
 
 
