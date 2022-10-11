@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+#printing my name
+my_name= 'Meike'
+print(my_name)
+
+
+
