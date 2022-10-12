@@ -35,5 +35,35 @@ print(f"{dna2.replace('T','U')}")
 
 dna3= 'GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCT'
 
+Dna3 = dna3.replace('T','U') 
+DNA3 = Dna3.replace('t','u')
+
+print(DNA3)
+
+print(f"The number of As is {DNA3.count('A') + DNA3.count('a')}")
+
+print(f"The number of Us is {DNA3.count('U') + DNA3.count('u')}")
+
+print(f"The number of Cs is {DNA3.count('C') + DNA3.count('c')}")
+
+print(f"The number of Gs is {DNA3.count('G') + DNA3.count('g')}")
+
+
+#part4: calculating AT count on dna2 seq
+dna4 = 'AATTGGCCA'
+print(f"The AT count is {dna2.count('A') + dna2.count('T')}")
+print(f"The GC count is {dna2.count('C') + dna2.count('G')}")
+
+
+#part5: extracting subset of nucleotides from dna2 
+
+dna5 = dna2[99:200]
+print(dna5)
+print(f"The number of Gs in the subset are {dna5.count('G')}")
+
+
+#part6:calcularing Gs in subset regardless of case using dna3
+dna6 = dna3[99:200]
+print(f"The number of Gs in this subset are {dna6.count('G') + dna6.count('g')}")
 
 
