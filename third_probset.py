@@ -62,8 +62,39 @@ print(dna5)
 print(f"The number of Gs in the subset are {dna5.count('G')}")
 
 
-#part6:calcularing Gs in subset regardless of case using dna3
+#part6: calculating Gs in subset regardless of case using dna3
 dna6 = dna3[99:200]
 print(f"The number of Gs in this subset are {dna6.count('G') + dna6.count('g')}")
+
+
+#part7: printing the reverse compliment of dna3 
+
+dna7 = 'ATGCAGGGGAAACATGATTCAGGAC'
+
+dna7a = dna7.replace('C','g')
+dna7b = dna7a.replace('G','c')
+dna7c = dna7b.replace('T','a')
+dna7d = dna7c.replace('A','t')
+
+dna8 = dna7d[::-1]
+print(f"{dna8.upper()}")
+
+  
+#part8: finding start site for EcoRI in dna2
+ecori = 'GAATTC'
+sub_dna  = dna2[dna2.find(ecori) : len(ecori)]
+start_site = dna2[dna2.find(ecori)]
+print(sub_dna)
+
+
+
+
+
+
+
+
+
+
+
 
 
