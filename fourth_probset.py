@@ -2,7 +2,6 @@
 #mlr 20221012
 
 #This is the fourth problemset: List and Loops 
-
 import sys
 
 taxa = 'sapiens, erectus, neanderthalensis'
@@ -79,6 +78,15 @@ for num1 in (range(first,second)):
   print(num1)
 
 
+#Part6: for loop iterating through lists 
+dna_list = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
+dna_tup = []
+for dna in dna_list: 
+  print(f"{str(len(dna))} \t {dna}")
+  length = str(len(dna)) 
+  seqs = dna
+  dna_tup = dna_tup.append(length + seqs)
+print(dna_tup)
 
 
 
