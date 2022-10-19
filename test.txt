@@ -1,0 +1,5 @@
+
+
+	usage: ./sequence_to_kmer_list.py sequence kmer_length
+
+
